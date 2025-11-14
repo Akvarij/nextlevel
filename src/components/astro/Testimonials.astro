@@ -1,0 +1,155 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/variables.css';
+---
+
+<section class="testimonials">
+    <div class="testimonials__container">
+        <div class="testimonials__left">
+            <p class="testimonials__eyebrow">TESTIMONIALS</p>
+            <h2 class="testimonials__headline">
+                Hear from our satisfied clients about their experiences working with us.
+            </h2>
+        </div>
+
+        <div class="testimonials__right">
+            <div class="testimonials__quote-wrapper">
+                <span class="testimonials__quote-mark">"</span>
+                <p class="testimonials__text">
+                    Prevzel sem podjetje z zgodovino - kar je dar in prekletstvo. Nisem hotel samo zamenjati logotipa. Hotel sem ustvariti nekaj novega, modernega, a s spoštovanjem do tradicije. NextLevel me ni silil v šablono. Dali so mi ekipo, ki je razumela, kam hočem. Vse - branding, video, splet, tiskovine, poročna snemanja, influenserji, vse! Kar me je najbolj presenetilo? Njihova energija. Z njimi ne delaš na 100%. Delaš na 200%. In to se pozna pri rezultatih.
+                </p>
+            </div>
+            <div class="testimonials__attribution">
+                <p class="testimonials__name">Nejc Markelc<span class="testimonials__company">, Kulinarika AS</span></p>
+            </div>
+            <div class="testimonials__dots">
+                <span class="testimonials__dot testimonials__dot--active"></span>
+                <span class="testimonials__dot"></span>
+                <span class="testimonials__dot"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+	.testimonials {
+		background-color: #fff;
+		color: #000;
+		margin: 0;
+		padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 6vw, 6rem);
+		height: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.testimonials__container {
+		max-width: 1400px;
+		margin: 0 auto;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: clamp(3rem, 6vw, 6rem);
+		align-items: start;
+		position: relative;
+	}
+
+	.testimonials__left {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.testimonials__eyebrow {
+		margin: 0 0 1.5rem 0;
+		font: normal normal normal 14px/16px "PP Telegraf Ultralight";
+		letter-spacing: 2.1px;
+		color: #9f9f9f;
+		text-transform: uppercase;
+	}
+
+	.testimonials__headline {
+		margin: 0;
+		font: normal normal 800 clamp(32px, 4vw, 60px)/1.2 "PP Telegraf";
+		letter-spacing: 0px;
+		color: #000;
+	}
+
+	.testimonials__right {
+		display: flex;
+		flex-direction: column;
+		margin-top: clamp(4rem, 8vw, 8rem);
+	}
+
+	.testimonials__quote-wrapper {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	.testimonials__quote-mark {
+		font: normal normal 800 clamp(60px, 8vw, 120px)/1 "PP Telegraf";
+		color: #000;
+		line-height: 0.8;
+		flex-shrink: 0;
+	}
+
+	.testimonials__text {
+		margin: 0;
+		font: normal normal normal clamp(16px, 2vw, 20px)/1.6 "PP Telegraf";
+		color: #9f9f9f;
+		flex: 1;
+	}
+
+	.testimonials__attribution {
+		margin-bottom: 2rem;
+	}
+
+	.testimonials__name {
+		margin: 0;
+		font: normal normal 800 clamp(18px, 2.5vw, 22px)/1.5 "PP Telegraf";
+		color: #000;
+	}
+
+	.testimonials__company {
+		font-weight: normal;
+	}
+
+	.testimonials__dots {
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	.testimonials__dot {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		border: 1px solid #000;
+		background: transparent;
+		display: block;
+	}
+
+	.testimonials__dot--active {
+		background: #000;
+		border-color: #000;
+	}
+
+	@media (max-width: 900px) {
+		.testimonials {
+			padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 4vw, 4rem);
+		}
+
+		.testimonials__container {
+			grid-template-columns: 1fr;
+			gap: clamp(2rem, 4vw, 4rem);
+		}
+
+		.testimonials__quote-wrapper {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		.testimonials__quote-mark {
+			line-height: 1;
+		}
+	}
+</style>

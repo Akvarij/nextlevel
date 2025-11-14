@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/react/Navbar.tsx';
+import Footer from '../../components/react/Footer';
+import LandingComponent from '../../components/astro/LandingComponent.astro'
+import Services from '../../components/astro/Services.astro'
+import BuildPackage from '../../components/astro/BuildPackage.astro'
+import CaseStudy from '../../components/astro/CaseStudy.astro'
+import Testimonials from '../../components/astro/Testimonials.astro';
+import OtherServices from '../../components/astro/OtherServices.astro';
+import ContactUs from '../../components/astro/ContactUs.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Navbar />
+	<LandingComponent />
+	<Services />
+	<BuildPackage />
+	<CaseStudy />
+	<Testimonials />
+	<OtherServices />
+	<ContactUs />
+	<Footer />
+</Layout>

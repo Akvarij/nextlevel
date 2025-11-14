@@ -1,0 +1,124 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/variables.css';
+
+const services = [
+	{
+		title: 'Web Infrastructure',
+		description: 'Establishing a robust digital presence with cutting-edge development and seamless integrations.',
+	},
+	{
+		title: 'Visual Services',
+		description: 'Crafting compelling visual identities and content that resonate with your audience.',
+	},
+	{
+		title: 'Digital Marketing',
+		description: 'Strategic planning and execution for online visibility and engagement.',
+	},
+	{
+		title: 'Business Automation and Optimization',
+		description: 'Streamlining processes and optimizing performance through intelligent automation.',
+	},
+];
+---
+<main class="other-services">
+    <div class="intro">
+        <p class="eyebrow">Lorem ipsum</p>
+        <h1>Ostale storitve</h1>
+    </div>
+
+    <ul class="service-list">
+        {services.map((service) => (
+            <li class="service-row">
+                <div class="service-title">
+                    <span class="arrow">↗</span>
+                    <span>{service.title}</span>
+                </div>
+                <p>{service.description}</p>
+            </li>
+        ))}
+    </ul>
+</main>
+
+<style>
+    .other-services {
+        font-family: var(--unnamed-font-family-pp-telegraf);
+        color: #9f9f9f;
+        margin: 120px 0;
+        padding: 0 24px 80px;
+        column-gap: 80px;
+        justify-content: center;
+    }
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: clamp(64px, 10vw, 140px);
+    }
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-size: 13px;
+		color: rgba(247, 247, 246, 0.6);
+		margin-bottom: 32px;
+	}
+	h1 {
+        color: #f7f7f6;
+		font-size: clamp(48px, 6vw, 72px);
+		margin: 0 0 72px;
+	}
+    .service-list {
+        list-style: none;
+        margin: 0 auto;
+        max-width: 50%;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        font-size: 30px;
+        line-height: 35px;
+    }
+	.service-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		padding: 32px 0;
+        padding-left: 50px;
+        padding-right: 50px;
+		border-top: 2px solid rgba(255, 255, 255, 0.18);
+	}
+	.service-row:last-child {
+		border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+	}
+	.service-title {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		font-size: 24px;
+	}
+	.service-title span:nth-child(2) {
+		color: #d9d9d9;
+	}
+	.arrow {
+		font-size: 22px;
+		color: rgba(247, 247, 246, 0.75);
+	}
+	.service-row p {
+		margin: 0;
+		color: rgba(247, 247, 246, 0.7);
+		font-size: 18px;
+		line-height: 1.5;
+	}
+    @media (max-width: 768px) {
+        .other-services {
+            margin-top: 96px;
+            grid-template-columns: 1fr;
+            row-gap: 48px;
+        }
+        .service-row {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+    }
+</style>

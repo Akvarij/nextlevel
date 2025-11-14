@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "PP Telegraf";
+  src: url("/fonts/PPTelegraf-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Telegraf";
+  src: url("/fonts/PPTelegraf-RegularOblique.otf") format("opentype");
+  font-weight: 400;
+  font-style: oblique;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Telegraf Ultralight";
+  src: url("/fonts/PPTelegraf-Ultralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Telegraf UltralightOblique";
+  src: url("/fonts/PPTelegraf-UltralightOblique.otf") format("opentype");
+  font-weight: 200;
+  font-style: oblique;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Telegraf Bold";
+  src: url("/fonts/PPTelegraf-Ultrabold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PP Telegraf";
+  src: url("/fonts/PPTelegraf-UltraboldOblique.otf") format("opentype");
+  font-weight: 800;
+  font-style: oblique;
+  font-display: swap;
+}
+
+:root {
+  /* Colors: */
+  --unnamed-color-383838: #383838;
+  --unnamed-color-f7f7f6: #f7f7f6;
+  --unnamed-color-885dfd: #885dfd;
+  --unnamed-color-292929: #292929;
+  --unnamed-color-1b1b1b: #1b1b1b;
+  --unnamed-color-9f9f9f: #9f9f9f;
+  --unnamed-color-6d5ca0: #6d5ca0;
+  --unnamed-color-dbb000: #dbb000;
+  --unnamed-color-f46300: #f46300;
+  --unnamed-color-027ad3: #027ad3;
+  --unnamed-color-cccccc: #cccccc;
+  --unnamed-color-ffffff: #ffffff;
+  --unnamed-color-000000: #000000;
+  --unnamed-color-9e9f9f: #9e9f9f;
+  --unnamed-color-fcfff5: #fcfff5;
+
+  /* Font/text values */
+  --unnamed-font-family-pp-telegraf: PP Telegraf;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-800: 800px;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-12: 12px;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-18: 18px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-font-size-22: 22px;
+  --unnamed-font-size-25: 25px;
+  --unnamed-font-size-26: 26px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-34: 34px;
+  --unnamed-font-size-35: 35px;
+  --unnamed-font-size-40: 40px;
+  --unnamed-font-size-60: 60px;
+  --unnamed-font-size-100: 100px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-character-spacing-1-8: 1.8px;
+  --unnamed-character-spacing-2-1: 2.1px;
+  --unnamed-line-spacing-13: 13px;
+  --unnamed-line-spacing-16: 16px;
+  --unnamed-line-spacing-19: 19px;
+  --unnamed-line-spacing-21: 21px;
+  --unnamed-line-spacing-24: 24px;
+  --unnamed-line-spacing-28: 28px;
+  --unnamed-line-spacing-32: 32px;
+  --unnamed-line-spacing-40: 40px;
+  --unnamed-line-spacing-41: 41px;
+  --unnamed-line-spacing-47: 47px;
+  --unnamed-line-spacing-70: 70px;
+  --unnamed-line-spacing-110: 110px;
+  --unnamed-text-transform-uppercase: uppercase;
+}
+
+/* Character Styles */
+.desktop-h1 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-800);
+  font-size: var(--unnamed-font-size-100);
+  line-height: var(--unnamed-line-spacing-110);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfff5);
+}
+.desktop-h2 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-800);
+  font-size: var(--unnamed-font-size-60);
+  line-height: var(--unnamed-line-spacing-70);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfff5);
+}
+.desktop-h3 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-800);
+  font-size: var(--unnamed-font-size-34);
+  line-height: var(--unnamed-line-spacing-40);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-fcfff5);
+}
+.desktop-h4 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-30);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+}
+.desktop-p1 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-25);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-9e9f9f);
+}
+.desktop-p2 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-28);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-9f9f9f);
+}
+.desktop-p3 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-24);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-9f9f9f);
+}
+.button {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-16);
+  letter-spacing: var(--unnamed-character-spacing-2-1);
+  color: var(--unnamed-color-027ad3);
+  text-transform: var(--unnamed-text-transform-uppercase);
+}
+.mobile-h1 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-800);
+  font-size: var(--unnamed-font-size-40);
+  line-height: var(--unnamed-line-spacing-47);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+}
+.mobile-h2 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-800);
+  font-size: var(--unnamed-font-size-35);
+  line-height: var(--unnamed-line-spacing-41);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+}
+.mobile-h3 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-800);
+  font-size: var(--unnamed-font-size-26);
+  line-height: var(--unnamed-line-spacing-28);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+}
+.mobile-h4 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-22);
+  line-height: var(--unnamed-line-spacing-28);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-ffffff);
+}
+.mobile-p1 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-18);
+  line-height: var(--unnamed-line-spacing-21);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-9e9f9f);
+}
+.mobile-p2 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-19);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-9e9f9f);
+}
+.mobile-p3 {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-16);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-9e9f9f);
+}
+.button {
+  font-family: var(--unnamed-font-family-pp-telegraf);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-12);
+  line-height: var(--unnamed-line-spacing-13);
+  letter-spacing: var(--unnamed-character-spacing-1-8);
+  color: var(--unnamed-color-9f9f9f);
+  text-transform: var(--unnamed-text-transform-uppercase);
+}

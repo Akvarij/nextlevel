@@ -1,0 +1,42 @@
+@import "../../styles/variables.css";
+/* Navbar.module.css - Only for custom animations/transitions */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbarButton {
+  width: auto;
+  height: 12px;
+  transition: transform 0.2s ease !important;
+  text-align: left;
+  font: normal normal normal 14px/16px PP Telegraf Ultralight;
+  letter-spacing: 2.1px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.contactButton {
+  width: 140px;
+  height: 50px;
+  background: transparent
+    linear-gradient(195deg, #ba38c1 0%, #885dfd 53%, #017ad3 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 25px !important;
+  opacity: 1;
+
+  text-align: center;
+  font: normal normal normal 14px/16px PP Telegraf Ultralight;
+  letter-spacing: 2.1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.contactButton:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}

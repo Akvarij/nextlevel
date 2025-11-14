@@ -1,0 +1,76 @@
+---
+import { Button, Box } from "@mui/material";
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/variables.css';
+---
+
+<Layout>
+    <main class="content">
+        <section class="package-block">
+            <h1>CTA za sestavo paketa ali povpraševanje</h1>
+            <Box sx={{ display: "flex", mb: "50px"}}>
+              <Button className="contactButton" variant="contained">
+                Sestavi svoj paket
+              </Button>
+            </Box>
+        </section>
+    </main>
+</Layout>
+
+<style>
+	:global(body) {
+		font-family: var(--unnamed-font-family-pp-telegraf);
+		background: var(--unnamed-color-1b1b1b);
+		color: var(--unnamed-color-f7f7f6);
+	}
+	.content {
+		height: auto;
+    background: #292929 0% 0% no-repeat padding-box;
+    align-content: center;
+    justify-items: center;
+		padding: 80px;
+	}
+	.package-block {
+    align-content: center;
+    justify-items: center;
+    width: 50%;
+    height: auto;
+		text-align: center;
+    font: normal normal 800 40px/50px PP Telegraf;
+    color: #FFFFFF;
+    opacity: 1;
+	}
+
+  .package-block h1 {
+    line-height: 1;
+	}
+
+  .contactButton {
+    width: 260px;
+    height: 50px;
+    background: transparent
+      linear-gradient(195deg, #ba38c1 0%, #885dfd 53%, #017ad3 100%) 0% 0%
+      no-repeat padding-box;
+    border-radius: 25px !important;
+    text-align: center;
+    font: normal normal normal 22px/28px PP Telegraf Ultralight;
+    letter-spacing: 2.1px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: none !important;
+  }
+
+  .contactButton:hover {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+	@media (max-width: 768px) {
+		.content {
+			margin-top: 96px;
+		}
+		.service-block {
+			padding: 36px 0;
+		}
+	}
+</style>

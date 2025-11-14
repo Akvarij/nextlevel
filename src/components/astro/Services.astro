@@ -1,0 +1,108 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/variables.css';
+
+const sections = [
+	{
+		title: 'Poslovna analiza in strategija',
+		items: [
+			'Analiza trenutnega poslovanja',
+			'SWOT analiza (moči, slabosti, priložnosti, nevarnosti)',
+			'Analiza konkurence in tržnega pozicioniranja',
+			'Definicija ciljne skupine',
+			'Oblikovanje vrednostne ponudbe (UVP)',
+			'Načrtovanje ciljev in KPI-jev',
+			'Priprava strateškega dokumenta',
+		],
+	},
+	{
+		title: 'Tržne raziskave in analiza',
+		items: [
+			'Analiza tržnih trendov',
+			'Analiza vedenja potrošnikov',
+			'Anketiranje / intervjuju (če je vključeno)',
+			'Analiza konkurence (digitalna prisotnost, oglasi, SEO)',
+			'Interpretacija podatkov in priporočila',
+		],
+	},
+    {
+        title: 'Svetovanje za digitalno transformacijo',
+        items: [
+            'Analiza trenutnih procesov',
+            'Identifikacija možnosti za digitalizacijo',
+            'Predlogi za avtomatizacijo (npr. CRM, e-mail, prodaja)',
+            'Načrt uvedbe digitalnih orodij', 
+            'Priprava strateškega predloga za transformacijo',
+        ]
+    },
+    {
+        title: 'Analitika podatkov in vpogledi',
+        items: [
+            'Vzpostavitev Google Analytics / GA4',
+            'Povezava z Meta Buisness Suite / Ads Managerjem',
+            'Namestitev orodij (npr. Hotjar, Search Console)',
+            'Priprava prilagojenih poročil',
+            'Razlaga podatkov, priporočila za optimizacijo',
+        ]
+    }
+];
+---
+
+<Layout>
+    <main class="content">
+        {sections.map((section) => (
+            <section class="service-block">
+                <h2>{section.title}</h2>
+                <ul>
+                    {section.items.map((item) => (
+                        <li>{item}</li>
+                    ))}
+                </ul>
+            </section>
+        ))}
+    </main>
+</Layout>
+
+<style>
+	:global(body) {
+		font-family: var(--unnamed-font-family-pp-telegraf);
+		background: var(--unnamed-color-1b1b1b);
+		color: var(--unnamed-color-f7f7f6);
+	}
+	.content {
+		width: 70%;
+		margin: 120px auto 5% 15%;
+		padding-bottom: 80px;
+	}
+	.page-heading {
+		margin-bottom: 64px;
+		font-size: clamp(36px, 5vw, 60px);
+		line-height: 1.1;
+		text-transform: uppercase;
+	}
+	.service-block {
+		padding: 48px 0;
+		border-top: 1.5px solid rgba(255, 255, 255, 0.466);
+	}
+	.service-block h2 {
+		margin: 0 0 24px;
+		font-size: clamp(24px, 3.5vw, 34px);
+	}
+	.service-block ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 12px;
+		font-size: clamp(16px, 2.5vw, 20px);
+		color: var(--unnamed-color-9f9f9f);
+	}
+	@media (max-width: 768px) {
+		.content {
+			margin-top: 96px;
+		}
+		.service-block {
+			padding: 36px 0;
+		}
+	}
+</style>

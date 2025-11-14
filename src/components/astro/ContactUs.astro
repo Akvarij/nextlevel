@@ -1,0 +1,132 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/variables.css';
+---
+
+<Layout>
+	<section class="contact-hero">
+			<div class="contact-hero__content-left">
+				<h1 class="contact-hero__headline">
+					Ready to elevate<br />
+					your business?
+				</h1>
+			</div>
+			<div class="contact-hero__content-right">
+				<p class="contact-hero__subtext">
+					Contact us today to<br />
+					discuss your project.
+				</p>
+				<a href="#" class="contact-hero__cta">
+					<span>CONTACT US</span>
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M4 12L12 4M12 4H6M12 4V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+			</div>
+	</section>
+</Layout>
+
+<style>
+	.contact-hero {
+        overflow: hidden;
+		position: relative;
+		width: 100%;
+		min-height: 100vh;
+        background: transparent;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		z-index: 2;
+	}
+
+       .contact-hero::before {
+       content: '';
+       position: absolute;
+       inset: 0;
+       background: linear-gradient(135deg, #6d5ca0 0%, #017ad3 100%);
+       clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+       z-index: -1;
+   }
+	.contact-hero__content-left {
+        width: 50%;
+		display: flex;
+        justify-content: center;
+        margin-right: clamp(64px, 10vw, 25%);;
+		margin-left: clamp(64px, 10vw, 140px);
+		margin-top: clamp(64px, 8vw, 140px);
+	}
+
+	.contact-hero__headline {
+		margin: 0;
+		font: normal normal 800 clamp(48px, 8vw, 100px)/1.1 "PP Telegraf";
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-align: left;
+	}
+
+	.contact-hero__content-right {
+        width: 80%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+        gap: 1.5rem
+	}
+
+	.contact-hero__subtext {
+		margin: 0;
+		font: normal normal normal clamp(16px, 2vw, 20px)/1.5 "PP Telegraf";
+		color: #FFFFFF;
+	}
+
+	.contact-hero__cta {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.75rem;
+		color: #FFFFFF;
+		text-decoration: none;
+		font: normal normal normal 14px/16px "PP Telegraf Ultralight";
+		letter-spacing: 2.1px;
+		text-transform: uppercase;
+		transition: opacity 0.2s;
+	}
+
+	.contact-hero__cta:hover {
+		opacity: 0.8;
+	}
+
+	.contact-hero__cta svg {
+		flex-shrink: 0;
+	}
+
+	@media (max-width: 900px) {
+		.contact-hero__gradient-section {
+			flex-direction: column;
+			padding: 2rem;
+			align-items: center;
+		}
+
+		.contact-hero__content-left {
+			margin-left: 0;
+			margin-top: 2rem;
+			justify-content: center;
+			width: 100%;
+		}
+
+		.contact-hero__headline {
+			text-align: center;
+		}
+
+		.contact-hero__content-right {
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 2rem;
+			align-items: center;
+			width: 100%;
+		}
+
+		.contact-hero__subtext {
+			text-align: center;
+		}
+	}
+</style>
